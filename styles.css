@@ -186,10 +186,10 @@ img {
 }
 
 .photo-wrap img {
-  width: 100%;
-  height: 420px;
-  object-fit: cover;
-  object-position: center top;
+  width: min(100%, 330px);
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 .profile-meta {
@@ -424,10 +424,6 @@ img {
 @media (max-width: 560px) {
   .hero {
     padding-top: 4rem;
-  }
-
-  .photo-wrap img {
-    height: 340px;
   }
 
   .button {
